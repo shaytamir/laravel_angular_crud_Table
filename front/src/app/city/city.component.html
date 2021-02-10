@@ -1,0 +1,58 @@
+<!-- <div> -->
+
+<form #editForm="ngForm" (ngSubmit)="onSubmit(editForm)" action="#" method="post">
+  <table>
+
+    <tr class="">
+      <td>
+        <div *ngIf="!editing">
+          {{city.name}}
+        </div>
+        <div *ngIf="editing">
+          <input type="text" name="name" value="{{city.name}}" [(ngModel)]="city.name">
+        </div>
+
+      </td>
+      <td>
+
+        <div *ngIf="!editing">
+          {{city.population}}
+        </div>
+        <div *ngIf="editing">
+          <input type="text" name="population" value="{{city.population}}" [(ngModel)]="city.population">
+        </div>
+      </td>
+      <td>
+        <div *ngIf="!editing">
+          {{city.country}}
+        </div>
+        <div *ngIf="editing">
+          <input type="text" name="country" value="{{city.country}}" [(ngModel)]="city.country">
+        </div>
+      </td>
+      <td>
+        <div *ngIf="editing" class="img_div">
+          <!-- <input type="text"> -->
+          <!-- <a href="#" (click)="onSaveClick()">save </a> -->
+          <button class="btn" type="submit"><img src="/assets/images/v.png" alt="edit"></button>
+          <!-- <a href="#" (click)="onCencelClick()"> cencel</a> -->
+
+          <img src="/assets/images/x.png" alt="edit" (click)="onCencelClick()">
+
+        </div>
+        <div *ngIf="!editing" class="img_div">
+          <img src="/assets/images/edit.png" alt="edit" (click)="onEditClick()">
+          <img src="/assets/images/delete-blue.png" alt="edit" (click)="onDeleteClick()">
+
+          <!-- <a href="#" (click)="onEditClick()">edit </a> -->
+          <!-- <a href="#" (click)="onDeleteClick()"> delete</a> -->
+        </div>
+      </td>
+    </tr>
+  </table>
+</form>
+
+
+
+
+<!-- </div> -->

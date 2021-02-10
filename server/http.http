@@ -1,0 +1,4 @@
+ @local = http://localhost:8000
+### new user
+GET {{local}}/api/cities
+# Content-Type:application/json

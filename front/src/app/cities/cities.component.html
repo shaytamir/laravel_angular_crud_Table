@@ -1,0 +1,20 @@
+<app-new-city (cityAdded)="onAdded($event)"></app-new-city>
+<hr>
+<table>
+  <thead>
+    <tr>
+      <th>City</th>
+      <th>Population</th>
+      <th>Country</th>
+      <th>edit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor=" let city of cities">
+      <td colspan="4">
+        <app-city [city]="city" (cityDeleted)="onDeleted($event)"></app-city>
+
+      </td>
+    </tr>
+  </tbody>
+</table>

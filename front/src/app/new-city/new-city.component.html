@@ -1,0 +1,26 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" action="#">
+  <div class="form-group form_flex">
+
+    <div>
+      <label for="name">City name</label><br>
+      <input type="text" class="form-control" name="name" id="name" ngModel>
+    </div>
+
+    <div>
+
+      <label for="population">City population</label><br>
+      <input type="text" class="form-control" name="population" id="population" ngModel>
+    </div>
+    <div>
+
+      <label for="country">City country</label><br>
+      <input type="text" class="form-control" name="country" id="country" ngModel>
+    </div>
+
+
+    <div>
+      <button type="submit" class="btn btn-primary ">submit</button>
+    </div>
+  </div>
+
+</form>
