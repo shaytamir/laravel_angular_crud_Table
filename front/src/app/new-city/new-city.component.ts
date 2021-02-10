@@ -21,7 +21,7 @@ export class NewCityComponent implements OnInit {
       .subscribe((data) => {
         console.log(data);
         this.cityAdded.emit(data['city']);
-        alert('City has been created');
+        // alert('City has been created');
       });
     form.reset();
   }
