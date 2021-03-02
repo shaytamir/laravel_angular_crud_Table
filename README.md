@@ -5,6 +5,7 @@ PHP/Laravel/angular/mysql/scss small app
  
 
 to open project:
+```
 *server side:
 -run in terminal: composer update
 -then copy the .env.example file and rename the copy:  .env
@@ -14,7 +15,7 @@ to open project:
 
 *front side:
 -run in terminal: npm i
--then run in terminal ng serve
+-then run in terminal ng serve```
 
  
 
