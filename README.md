@@ -1,5 +1,5 @@
 
-#  Cities_crud_Table
+#  Cities Crud Table
 ```
 Cities Object crud table.
 create,update,delete cities from cities table
@@ -48,9 +48,11 @@ Open commend Line on the project directory:
 
 - then run command ng serve
 ```
-### on browser open 
-### http://localhost:4200
-
+#### After all Setups 
+```
+open browser on:
+ http://localhost:4200
+```
 ## Authors
 
 * **Shay Tamir** 
